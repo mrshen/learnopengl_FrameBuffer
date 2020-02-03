@@ -76,8 +76,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\62720\Documents\learning\opengl\glm-0.9.8.3\glm;C:\Users\62720\Documents\learning\opengl\glad\include;C:\Users\62720\Documents\learning\opengl\glfw-3.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\62720\Documents\learning\opengl\glfw-3.3\build\src\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\work\learning\opengl\forIncludes;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\work\learning\opengl\forLibs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
