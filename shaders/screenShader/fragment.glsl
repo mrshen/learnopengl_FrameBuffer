@@ -12,7 +12,7 @@ void main()
     FragColor = vec4(col, 1.0);
 
 	// inverse mode
-	//FragColor = vec4(vec3(1.0 - texture(screenTexture, TexCoords)), 1.0);
+//	FragColor = vec4(vec3(1.0 - texture(screenTexture, TexCoords)), 1.0);
 
 	// gray mode
 //	vec4 col = texture(screenTexture, TexCoords);
