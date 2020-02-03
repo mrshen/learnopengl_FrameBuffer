@@ -202,6 +202,7 @@ int main()
 	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 		cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << endl;
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
+	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 	// render loop
 	while (!glfwWindowShouldClose(window))
@@ -214,7 +215,6 @@ int main()
 		// make sure we clear the framebuffer's content
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-		//glClear(GL_COLOR_BUFFER_BIT);
 
 		shaderScn.use();
 		glm::mat4 model = glm::mat4(1.0f);
@@ -230,7 +230,7 @@ int main()
 		shaderScn.setMat4("model", model);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(1.0f, 0.0f, 0.0f));
 		shaderScn.setMat4("model", model);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		// floor
